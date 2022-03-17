@@ -2,9 +2,10 @@
 #include <FB_AquaTempSensor.h>
 
 #define TDS_PIN A1
+#define TEMP_PIN 2
 
-FB::AquaTempSensor tempSensor(2);
-FB::TDSSensor tdsSensor(A1);
+FB::AquaTempSensor tempSensor(TEMP_PIN);
+FB::TDSSensor tdsSensor(TDS_PIN);
 
 float waterTemp, tdsValue;
 
